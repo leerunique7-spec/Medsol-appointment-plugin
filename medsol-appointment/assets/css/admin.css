@@ -1,0 +1,103 @@
+.medsol-off-canvas {
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100%;
+	background: #fff;
+	box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+	transition: right 0.3s;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+}
+
+body.medsol-off-canvas-open .medsol-off-canvas {
+	right: 0;
+}
+
+.medsol-off-canvas-header {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.medsol-off-canvas-body {
+	flex: 1;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.medsol-off-canvas-footer {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+	text-align: right;
+}
+
+.nav-tab-wrapper {
+	margin-bottom: 10px;
+}
+
+.nav-tab {
+	cursor: pointer;
+}
+
+.day-off-row {
+	margin-bottom: 10px;
+}
+
+.day-off-row input {
+	margin-right: 5px;
+}
+
+#medsol-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 9998;
+	display: none;
+	justify-content: flex-end;
+}
+
+		.medsol-notifications-wrap .medsol-general{margin:12px 0 20px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+		.medsol-notifications-wrap .medsol-general .medsol-toggle input{margin-right:8px}
+		.medsol-notifications-wrap .medsol-admin-recipients input{min-width:380px}
+		.medsol-subtabs{display:flex;gap:8px;margin:14px 0}
+		.medsol-subtab{padding:8px 12px;border:1px solid #ccd0d4;border-bottom:none;background:#f6f7f7;color:#1d2327;text-decoration:none;border-radius:4px 4px 0 0}
+		.medsol-subtab.is-active{background:#fff;font-weight:600}
+		.medsol-audience-grid{display:grid;grid-template-columns:260px 1fr;gap:16px}
+		.medsol-left-rail{position:sticky;top:32px;align-self:start}
+		.medsol-template-list{margin:8px 0 0;padding:0;list-style:none}
+		.medsol-template-item{border:1px solid #e2e4e7;border-radius:8px;padding:8px 10px;margin-bottom:8px;background:#fff}
+		.medsol-template-item.is-active{outline:2px solid #2271b1}
+		.medsol-checkbox input{margin-right:8px}
+		.medsol-editor-pane{background:#fff;border:1px solid #e2e4e7;border-radius:8px;padding:16px;min-height:420px}
+		.medsol-editor-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+		.medsol-header-actions{display:flex;gap:14px;align-items:center}
+		.medsol-field{margin-bottom:14px}
+		.medsol-input, .medsol-textarea{width:100%}
+		.medsol-textarea{min-height:260px}
+		.medsol-sticky{position:sticky;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:10px;margin-top:8px;border-top:1px solid #e2e4e7;background:#fff}
+		.medsol-dirty-indicator{color:#d63638}
+		/* Drawer */
+		.medsol-drawer{position:fixed;top:32px;right:-380px;width:360px;height:calc(100% - 32px);background:#fff;border-left:1px solid #e2e4e7;box-shadow:-2px 0 8px rgba(0,0,0,.05);transition:right .2s ease;z-index:1000;display:flex;flex-direction:column}
+		.medsol-drawer.is-open{right:0}
+		.medsol-drawer-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid #e2e4e7}
+		.medsol-drawer-body{padding:12px 14px;overflow:auto}
+		.medsol-search{width:100%;margin-bottom:10px}
+		.medsol-ph-group{margin-bottom:12px}
+		.medsol-ph-group h4{margin:8px 0}
+		.medsol-ph-item{display:flex;justify-content:space-between;align-items:center;border:1px dashed #dcdcde;border-radius:6px;padding:6px 8px;margin-bottom:6px}
+		.medsol-ph-main{display:flex;flex-direction:column}
+		.medsol-ph-code{background:#f6f7f7;padding:2px 6px;border-radius:4px}
+		.medsol-ph-actions .button{margin-left:6px}
+		/* Modal */
+		.medsol-modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;z-index:1001}
+		.medsol-modal[aria-hidden="false"]{display:flex}
+		.medsol-modal__dialog{background:#fff;border-radius:8px;min-width:420px;max-width:560px;border:1px solid #e2e4e7}
+		.medsol-modal__header,.medsol-modal__footer{padding:12px 14px;border-bottom:1px solid #e2e4e7}
+		.medsol-modal__footer{border-top:1px solid #e2e4e7;border-bottom:none;display:flex;gap:8px;justify-content:flex-end}
+		.medsol-modal__body{padding:14px}
+		.medsol-modal__body label{display:block;margin-bottom:10px}

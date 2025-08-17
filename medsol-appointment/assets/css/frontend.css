@@ -1,0 +1,93 @@
+.medsol-booking-form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.medsol-booking-form label {
+	display: block;
+	margin-top: 10px;
+}
+
+.medsol-booking-form input, .medsol-booking-form select, .medsol-booking-form textarea {
+	width: 100%;
+	padding: 5px;
+}
+
+#time-slots button.selected {
+	background: green;
+	color: white;
+}
+
+#time-slots {
+	margin-top: 10px;
+}
+
+#time-slots button {
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#booking-message {
+	margin-top: 10px;
+	color: green;
+}
+
+.flatpickr-calendar {
+	display: block !important;
+	background: white !important;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
+	overflow: visible !important;
+	width: 307px !important;
+	position: relative !important;
+}
+
+.flatpickr-calendar .flatpickr-months, .flatpickr-calendar .flatpickr-days {
+	overflow: visible !important;
+	background: white !important;
+}
+
+.flatpickr-calendar .flatpickr-day {
+	background: none !important;
+	border: 1px solid #eee !important;
+	color: black !important;
+	height: 38px !important;
+	line-height: 36px !important;
+}
+
+ .flatpickr-calendar .flatpickr-day.selected{
+	background: green!important;
+	color: white!important;
+ }
+
+.flatpickr-calendar.arrowTop:before, .flatpickr-calendar.arrowTop:after {
+	border-bottom-color: white !important;
+}
+
+body .flatpickr-calendar * {
+	box-sizing: border-box !important;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+#booking-calendar-container .flatpickr-calendar {
+  display: block !important;
+}
+
+ .flatpickr-day.flatpickr-disabled{
+	background: #f6f6f6 !important;
+	color: #ccc !important;
+	opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+	.flatpickr-calendar {
+		width: 100% !important;
+	}
+	.medsol-booking-form input, .medsol-booking-form select, .medsol-booking-form textarea {
+		font-size: 16px; /* Better touch target */
+	}
+}
