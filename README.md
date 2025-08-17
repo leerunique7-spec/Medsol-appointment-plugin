@@ -1,0 +1,1 @@
+# Medsol-appointment-plugin
